@@ -26,7 +26,10 @@ dbConnection()
 app.all("/",(req,res)=>{
     res.send({
         error:false,
-        message:"hata weg"
+        
+        message: 'Welcome to PERSONNEL API',
+        session: req.session,
+        isLogin: req.isLogin
     })
 })
 
