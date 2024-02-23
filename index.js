@@ -63,16 +63,16 @@ app.use("/tokens",require("./src/routes/token.router"))
 app.use("/auth",require("./src/routes/auth.router"))
 
 
-//log 
-const morgan = require("morgan")
-//app.use(morgan("tiny"))
-//log kayit tutma
-const fs = require('node:fs')//file system
-const now = new Date()
-const today = now.toISOString().split('T')[0]
-app.use(morgan('combined', {
-    stream: fs.createWriteStream(`./logs/${today}.log`, { flags: 'a+' })
-}))
+// //log  render de iyin vermiyor
+// const morgan = require("morgan")
+// //app.use(morgan("tiny"))
+// //log kayit tutma
+// const fs = require('node:fs')//file system
+// const now = new Date()
+// const today = now.toISOString().split('T')[0]
+// app.use(morgan('combined', {
+//     stream: fs.createWriteStream(`./logs/${today}.log`, { flags: 'a+' })
+// }))
 //npm i swagger-ui-express
 const swaggerUi= require("swagger-ui-express")
 const swaggerJson = require("./swagger.json")
