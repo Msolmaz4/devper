@@ -3,6 +3,7 @@
 ### ERD:
 
 ![ERD](./erdPersonnelAPI.png)
+![ERD](./ders.png)
 
 ### Folder/File Structure:
 
