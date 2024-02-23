@@ -30,3 +30,21 @@
             department.router.js
             personnel.router.js
 ```
+
+## vercel icin
+sonra ana diyinde vercel.json
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "index.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "index.js"
+        }
+    ]
+}
